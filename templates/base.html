@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+{% block content %}  <!--с помошью этого блока выводим код на страницу-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+<h1> Первая страница </h1>
+{% if name %}
+    <p>Ты выиграл!</p>
+{% else %}
+    <p>Ты проиграл!</p>
+{% endif %}
+
+<!--{{ name }}-->
+{% endblock %}
+</body>
+</html>
